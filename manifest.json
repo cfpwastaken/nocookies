@@ -1,0 +1,16 @@
+{
+  "name": "No Cookies",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Reject all cookies",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
